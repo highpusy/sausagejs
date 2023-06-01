@@ -1,0 +1,165 @@
+@import '../../styles/mixins.scss';
+
+.main {
+    height: 120%;
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 90px;
+    margin: 0 0 95px 0;
+    font-family: 'arimo'; 
+    @include tablet-land {
+        font-size: 75px;
+    }
+    @include tablet-small {
+        font-size: 60px;
+    }
+    @include mobile-land {
+        font-size: 50px;
+    }
+    @include mobile {
+        font-size: 40px;
+        margin: 0 0 30px 0;
+    }
+    @include mobile-ss {
+        font-size: 30px;
+    }
+}
+
+.content1 {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 0 130px 0;
+    @include tablet-land {
+        width: 80%;
+    }
+    @include tablet-medium {
+        width: 90%;
+    }
+    @include mobile-land {
+        margin: 0 0 70px 0;
+    }
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+.content2 {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    @include tablet-land {
+        width: 80%;
+    }
+    @include tablet-medium {
+        width: 90%;
+    }
+    @include mobile-land {
+        justify-content: space-around;
+    }
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    overflow: hidden;
+    @include mobile-land {
+        width: 40%;
+    }
+    @include mobile {
+        margin: 15px 0 15px 0;
+        width: 80%;
+    }
+}
+
+.block3 {
+    @include mobile-land {
+        margin: 70px 0 0 0;
+    }
+    @include mobile {
+        margin: 0;
+    }
+}
+
+.block_img {
+    width: 295px;
+    height: 205px;
+    object-fit: cover;
+    @include desktop-fdh145 {
+        width: 295px;
+        height: 205px;
+    }
+    @include desktop-fdh125 {
+        width: 275px;
+        height: 185px;
+    }
+    @include desktop-hdp {
+        width: 245px;
+        height: 155px;
+    }
+    @include desktop-hd {
+        width: 205px;
+        height: 115px;
+    }
+    @include tablet-land {
+        width: 205px;
+        height: 115px;
+    }
+}
+
+.block_title {
+    font-size: 30px;
+    margin: 10px 0 0 0;
+    font-family: 'arsenica'; 
+    @include desktop-fdh145 {
+        font-size: 25px;
+    }
+    @include desktop-fdh125 {
+        font-size: 22px;
+    }
+    @include desktop-hdp {
+        font-size: 19px;
+    }
+    @include desktop-hd {
+        font-size: 16px;
+    }
+    @include tablet-land {
+        font-size: 16px;
+    }
+}
+
+.block_text {
+    font-family: 'ttCommons';
+    margin: 0;
+    font-size: 18px;
+    @include desktop-fdh145 {
+        font-size: 16px;
+    }
+    @include desktop-fdh125 {
+        font-size: 14px;
+    }
+    @include desktop-hdp {
+        font-size: 12px;
+        width: 90%;
+    }
+    @include desktop-hd {
+        font-size: 10px;
+        width: 80%;
+    }
+    @include tablet-land {
+        font-size: 10px;
+    }
+}

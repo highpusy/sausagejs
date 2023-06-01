@@ -1,0 +1,98 @@
+@import '../../styles/mixins.scss';
+
+.main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile-ss {
+        flex-direction: column;
+    }
+}
+
+.title {
+    width: 25%;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+    margin: 490px 105px 0 0;
+    background-image: url('../../imgs/s.skills.img1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 110px;
+    background-size: contain;
+    @include tablet-land {
+        width: 40%;
+        margin: 490px 35px 0 20px;
+        background-position-y: 60px;
+    }
+    @include mobile-ss {
+        margin: 30px 0 0 0;
+        height: 20%;
+        width: 70%;
+        background-position-y: 40px;
+    }
+}
+
+.title_text {
+    font-family: 'arimo'; 
+    font-weight: 200;
+    font-size: 75px;
+    @include desktop-hd {
+        font-size: 58px;
+    }
+    @include tablet-land {
+        font-size: 42px;
+    }
+    @include mobile-land {
+        font-size: 36px;
+    }
+    @include mobile {
+        font-size: 30px;
+    }
+    @include mobile-ss {
+        font-size: 22px;
+    }
+}
+
+.content {
+    margin: 170px 0 0 0;
+    width: 30%;
+    @include tablet-land {
+        width: 40%;
+        margin: 60px 0 0 0;
+    }
+    @include mobile-land {
+        margin: 0 0 70px 0;
+    }
+}
+
+.content_title {
+    font-family: 'arsenica'; 
+    font-weight: 200;
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+    @include tablet-land {
+        font-size: 25px;
+    }
+    @include mobile-land {
+        font-size: 20px;
+    }
+    @include mobile-ss {
+        font-size: 22px;
+    }
+}
+
+.content_text {
+    font-family: 'ttCommonsLight';
+    font-size: 21px;
+    @include tablet-land {
+        font-size: 16px;
+    }
+    @include mobile-land {
+        font-size: 11px;
+    }
+    @include mobile-ss {
+        font-size: 13px;
+    }
+}

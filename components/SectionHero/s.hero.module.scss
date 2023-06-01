@@ -1,0 +1,70 @@
+@import '../../styles/mixins.scss';
+
+.main_background {
+    width: 95vw;
+    background-image: url('../../imgs/s.hero.img1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 370px;
+    @include tablet-land {
+        background-size: 320px;
+    }
+    @include tablet {
+        background-size: 280px;
+    }
+    @include mobile {
+        background-size: 230px;
+    }
+}
+
+.main {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 0 2vw;
+}
+
+.title {
+    color: #2f5233;
+    margin: 170px 0 0 0;
+    font-size: 160px;
+    font-family: 'arsenica'; 
+    @include tablet-land {
+        font-size: 100px;
+    }
+    @include tablet {
+        font-size: 70px;
+    }
+    @include mobile {
+        font-size: 40px;
+    }
+}
+
+.title2 {
+    margin: 130px 0 0 0;
+    font-size: 160px;
+    font-family: 'arimo'; 
+    @include tablet-land {
+        font-size: 100px;
+    }
+    @include tablet {
+        font-size: 70px;
+    }
+    @include mobile {
+        font-size: 40px;
+    }
+}
+
+.title3 {
+    margin: 35px 0 0 0;
+    font-size: 25px;
+    font-family: 'ttCommons';
+    @include tablet-land {
+        font-size: 20px;
+    }
+    @include tablet {
+        margin: 75px 0 0 0;
+        font-size: 15px;
+    }
+}

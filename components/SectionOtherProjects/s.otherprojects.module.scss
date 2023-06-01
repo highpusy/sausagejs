@@ -1,0 +1,136 @@
+@import '../../styles/mixins.scss';
+
+.main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    width: 60%;
+    padding: 50px 0 80px 0;
+    @include desktop-fdh125 {
+        width: 70%;
+    }
+    @include desktop-hd {
+        width: 80%;
+    }
+    @include tablet-small {
+        padding: 100px 0 100px 0;
+    }
+    @include mobile {
+        padding: 100px 0 70px 0;
+        flex-direction: column;
+    }
+}
+
+.title {
+    font-size: 75px;
+    margin: 0 100px 0 0;
+    width: 33%;
+    font-family: 'arimo'; 
+    font-weight: 200;
+    @include desktop-hd {
+        font-size: 65px;
+    }
+    @include tablet-land {
+        font-size: 50px;
+        margin: 0 150px 0 0;
+    }
+    @include tablet-small {
+        font-size: 40px;
+    }
+    @include mobile-land {
+        margin: 0 70px 0 0;
+        font-size: 30px;
+    }
+}
+
+.text {
+    font-size: 21px;
+    width: 33%;
+    font-family: 'ttCommonsLight';
+    @include desktop-hd {
+        font-size: 18px;
+    }
+    @include tablet-land {
+        font-size: 16px;
+    }
+    @include tablet-small {
+        font-size: 14px;
+    }
+    @include mobile {
+        margin: 35px 0 0 20px;
+        width: 100%;
+    }
+}
+
+.imgs {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    @include desktop-hd {
+        width: 80%;
+    }
+}
+
+.img1 {
+    height: 356px;
+    width: 575px;
+    @include tablet-land {
+        height: 296px;
+        width: 515px;
+    }
+    @include tablet-medium {
+        height: 256px;
+        width: 475px;
+    }
+    @include tablet-small {
+        height: 216px;
+        width: 435px;
+    }
+    @include mobile-land {
+        height: 186px;
+        width: 405px;
+    }
+    @include mobile {
+        height: 146px;
+        width: 365px;
+    }
+    @include mobile {
+        height: 126px;
+        width: 345px;
+    }
+}
+
+.img2 {
+    height: 360px;
+    width: 240px;
+    rotate: -7deg;
+    margin: 0 0 0 30px;
+    @include tablet-land {
+        height: 300px;
+        width: 180px;
+    }
+    @include tablet-medium {
+        height: 260px;
+        width: 140px;
+    }
+    @include tablet-small {
+        height: 220px;
+        width: 100px;
+    }
+    @include mobile-land {
+        height: 190px;
+        width: 70px;
+    }
+    @include mobile {
+        height: 150px;
+        width: 30px;
+    }
+    @include mobile {
+        display: none;
+    }
+}

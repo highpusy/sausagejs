@@ -1,0 +1,1 @@
+export {SectionSlogan} from './SectionSlogan'

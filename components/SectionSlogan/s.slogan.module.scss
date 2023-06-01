@@ -1,0 +1,81 @@
+@import '../../styles/mixins.scss';
+
+.main {
+    height: 80vh;
+    color: white;
+    background: #2f5233;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}    
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title_img1 {
+    width: 190px;
+    height: 110px;
+    object-fit: cover;
+    @include tablet-land {
+        width: 160px;
+        height: 100px;
+    }
+    @include tablet-medium {
+        width: 140px;
+        height: 110px;
+    }
+    @include tablet-small {
+        display: none;
+    }
+}
+
+.title_img2 {
+    width: 270px;
+    height: 110px;
+    object-fit: cover;
+    @include tablet-land {
+        width: 240px;
+        height: 100px;
+    }
+    @include tablet-medium {
+        width: 220px;
+        height: 90px;
+    }
+    @include tablet-small {
+        display: none;
+    }
+}
+
+.title_text {
+    font-size: 120px;
+    margin: 15px;
+    letter-spacing: 10px;
+    font-family: 'arimo'; 
+    font-weight: 200;
+    @include tablet-land {
+        font-size: 100px;
+    }
+    @include tablet-medium {
+        font-size: 80px;
+    }
+    @include tablet-small {
+        font-size: 55px;
+    }
+    @include mobile-ss {
+        font-size: 30px;
+    }
+}
+
+.title_text__italic {
+    font-family: 'arsenicaItalic'; 
+}

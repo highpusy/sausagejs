@@ -1,0 +1,1 @@
+export {SectionWhyWe} from './SectionWhyWe'

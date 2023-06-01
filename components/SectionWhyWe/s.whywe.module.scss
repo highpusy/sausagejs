@@ -1,0 +1,105 @@
+@import '../../styles/mixins.scss';
+
+.main {
+    background: #2f5233;
+    height: 80vh;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.container {
+    width: 60%;
+    @include desktop-fdh125 {
+        width: 70%;
+    }
+    @include desktop-hd {
+        width: 80%;
+    }
+    
+}
+
+.title {
+    font-family: 'arimo'; 
+    font-weight: lighter;
+    font-size: 80px;
+    width: 60%;
+    margin: 80px 0 0 0;
+    @include desktop-hd {
+        font-size: 60px;
+    }
+    @include tablet-land {
+        font-size: 45px;
+    }
+    @include mobile {
+        font-size: 30px;
+    }
+}
+
+.content2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block {
+    width: 25%;
+    margin: 15px 0 0 0;
+}
+
+.block_title {
+    font-weight: 200;
+    font-size: 25px;
+    font-family: 'arsenica'; 
+    margin: 0 0 15px 0;
+    letter-spacing: 1px;
+    @include desktop-hd {
+        font-size: 22px;
+    }
+    @include tablet-land {
+        font-size: 19px;
+    }
+    @include mobile {
+        font-size: 16px;
+    }
+}
+
+.block_text {
+    font-size: 22px;
+    font-weight: 100;
+    font-family: 'ttCommonsLight';
+    @include desktop-hd {
+        font-size: 19px;
+    }
+    @include tablet-land {
+        font-size: 16px;
+    }
+    @include mobile {
+        font-size: 13px;
+    }
+}
+
+.img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    @include desktop-hd {
+        width: 270px;
+        height: 170px;
+    }
+    @include tablet-land {
+        width: 240px;
+        height: 140px;
+    }
+    @include tablet-land {
+        width: 0;
+        height: 0;
+    }
+}
+
+.block_img {
+    @include tablet-land {
+        width: 0;
+        height: 0;
+    }
+}
